@@ -62,6 +62,9 @@
               <hr class="m-0">
               <a class="dropdown-item" href="/carpool/user/signup.php">Signup User</a>
               <a class="dropdown-item" href="/carpool/rentalAgency/signup.php">Signup Agency</a>
+              <hr class="m-0">
+              <a class="dropdown-item" href="/carpool/logout.php">Logout</a>
+              
             </div>
           </li>
         </ul>

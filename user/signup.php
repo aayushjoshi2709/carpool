@@ -2,6 +2,12 @@
     session_start();
     require("../conn.php");
     $status = 0;
+    // old user need to be logged out for a new user to login or signup
+    if(isset($_SESSION["userid"]) && 
+    isset($_SESSION["usertype"])){
+        header("Location: ../index.php");
+        die(); 
+    }
     if(isset($_POST["email"])){
         function validate($str, $conn){
             $str = stripcslashes($str);   
@@ -26,6 +32,7 @@
                 $status = 1;
                 $_SESSION["userid"] = $conn->insert_id;
                 $_SESSION["usertype"] = "user";
+                header("Location: ../index.php");
             }
         }else{
             $status = 2;
