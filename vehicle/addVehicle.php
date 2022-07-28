@@ -50,7 +50,7 @@
             <label class="form-label" for="rent">Rent Per Day</label>
         </div>
         <div class="form-outline mb-2">
-            <input type="text" id="rent" name="image" class="form-control" />
+            <input type="text" id="image" name="image" class="form-control" />
             <label class="form-label" for="image">Image url</label>
         </div>
         <div class="text-center">

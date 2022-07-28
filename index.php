@@ -56,7 +56,7 @@
         $result = $conn->query("SELECT * from registeredvehicles where vehicleNumber not in (SELECT vehicleNumber from bookedvehicles where endDate >='".$dateNow."');");
         if ($result->num_rows > 0) {
           while($row = $result->fetch_array(MYSQLI_NUM)){
-            echo '
+            $str = '
             <div class="col-auto mb-3">
               <div class="card shadow p-1"  style="width: 18rem">
                 <img src="'.$row[4].'" class="card-img-top" alt="..." />
@@ -83,12 +83,18 @@
                     </div>
                     <div class="text-center">
                     <button name="submit" value="true" type="submit" class="btn btn-primary  btn-block m-auto">Book Now</button>
-                     </div>
+                    ';
+                    if(isset($_SESSION["usertype"]) && isset($_SESSION["userid"]) && $_SESSION["usertype"] == "agency" && $_SESSION["userid"] == $row[5]){
+                      $str = $str.'<a href="./vehicle/updateVehicle.php?vehicleNo='.$row[0].'" class="btn btn-warning  btn-block m-auto"><i class="fas fa-edit"></i></a>';
+                    }
+                    $str = $str.'</div>
                   </form>
                 </div> 
               </div>
             </div>
           </div>';
+          echo $str;
+          ;
           }
         }else{
             echo "No vehicles are currently available";
