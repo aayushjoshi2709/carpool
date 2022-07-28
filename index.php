@@ -52,8 +52,8 @@
       ?>
       <div class="row my-auto">
       <?php
-        $dateNow = date("Y/m/d");
-        $result = $conn->query("SELECT * from registeredvehicles where vehicleNumber not in (SELECT vehicleNumber from bookedvehicles where endDate >=".$dateNow.");");
+        $dateNow = date("Y-m-d");
+        $result = $conn->query("SELECT * from registeredvehicles where vehicleNumber not in (SELECT vehicleNumber from bookedvehicles where endDate >='".$dateNow."');");
         if ($result->num_rows > 0) {
           while($row = $result->fetch_array(MYSQLI_NUM)){
             echo '

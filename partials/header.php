@@ -33,12 +33,11 @@
                     <a class="nav-link" href="/carpool/">Available Vehicles</a>
                 </li>
                 <?php
-                if(isset($_SESSION["userid"]) && isset($_SESSION["usertype"])){
-                  echo '<li class="nav-item">
+                
+            if(isset($_SESSION["userid"]) && isset($_SESSION["usertype"]) && $_SESSION["usertype"] == "agency"){
+                echo '<li class="nav-item">
                   <a class="nav-link" href="/carpool/vehicle/bookedVehicles.php">Booked Vehicle</a>
                 </li>';
-                }
-            if(isset($_SESSION["userid"]) && isset($_SESSION["usertype"]) && $_SESSION["usertype"] == "agency"){
               echo '<li class="nav-item">
               <a class="nav-link" href="/carpool/vehicle/addVehicle.php">Add Vehicle</a>
             </li>';
