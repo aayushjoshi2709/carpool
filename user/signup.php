@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require("../conn.php");
     $status = 0;
     if(isset($_POST["email"])){
@@ -23,6 +24,8 @@
             $stmt->bind_param("sssisss", $firstname, $lastname, $address, $phone_no, $email, $username, $password);
             if($stmt->execute()){
                 $status = 1;
+                $_SESSION["userid"] = $conn->insert_id;
+                $_SESSION["usertype"] = "user";
             }
         }else{
             $status = 2;
