@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require("../partials/header.php");
     require("../conn.php");
     $status = 0;
     // old user need to be logged out for a new user to login or signup
@@ -32,7 +32,6 @@
         $stmt->close();
     }
     $conn->close();
-    require("../partials/header.php");
 ?>
 <div class="container border p-3 px-4 my-5 shadow bg-white rounded" style="width: 24rem">
     <form action="#" method="post" id="form">

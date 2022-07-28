@@ -1,5 +1,5 @@
-<?php
-    session_start();
+<?php 
+    require("../partials/header.php");
     require("../conn.php");
     $status = 0;
     if(!isset($_SESSION["userid"]) || 
@@ -27,7 +27,6 @@
         }
         $stmt->close();
     }
-    require("../partials/header.php");
 ?>
 <div class="container border p-3 px-4 my-5 shadow bg-white rounded" style="width: 30rem">
     <form method="post" action="#">
