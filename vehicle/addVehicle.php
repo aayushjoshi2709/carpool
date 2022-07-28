@@ -14,7 +14,6 @@
             $str = mysqli_real_escape_string($conn, $str);  
             return $str;
         }
-        echo $_POST["model"];
         $model = validate($_POST["model"], $conn);
         $seats = validate($_POST["seats"], $conn);
         $rent = validate($_POST["rent"], $conn);

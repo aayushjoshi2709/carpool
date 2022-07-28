@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/carpool/">Home</a>
+                    <a class="nav-link" href="/carpool/">Available Vehicles</a>
                 </li>
                 <?php
                 if(isset($_SESSION["userid"]) && isset($_SESSION["usertype"])){
