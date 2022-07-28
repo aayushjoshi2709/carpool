@@ -32,7 +32,7 @@
     $conn->close();
     require("../partials/header.php");
 ?>
-<div class="container border p-3 px-4 my-5 shadow bg-white rounded"  style="width: 50rem">
+<div class="container border p-3 px-4 my-5 shadow bg-white rounded"  style="width: 30rem">
     <form action="#" method="post" id="form">
         <h1 class="display-2 text-center m-4">Signup</h1>
         <h1 class="lead text-center m-4">User</h1>
