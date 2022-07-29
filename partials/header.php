@@ -33,16 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/carpool/">Available Vehicles</a>
+                    <a class="nav-link" href="/">Available Vehicles</a>
                 </li>
                 <?php
                 
             if(isset($_SESSION["userid"]) && isset($_SESSION["usertype"]) && $_SESSION["usertype"] == "agency"){
                 echo '<li class="nav-item">
-                  <a class="nav-link" href="/carpool/vehicle/bookedVehicles.php">Booked Vehicle</a>
+                  <a class="nav-link" href="/vehicle/bookedVehicles.php">Booked Vehicle</a>
                 </li>';
               echo '<li class="nav-item">
-              <a class="nav-link" href="/carpool/vehicle/addVehicle.php">Add Vehicle</a>
+              <a class="nav-link" href="/vehicle/addVehicle.php">Add Vehicle</a>
             </li>';
             }
           ?>
@@ -60,13 +60,13 @@
                     <div class="dropdown-menu mt-2 " aria-labelledby="navbarDropdownMenuLink">
                         <?php
                 if(isset($_SESSION["userid"]) && isset($_SESSION["usertype"])){
-                    echo '<a class="dropdown-item" href="/carpool/logout.php">Logout</a>';
+                    echo '<a class="dropdown-item" href="/logout.php">Logout</a>';
                 }else{
-                    echo '<a class="dropdown-item" href="/carpool/user/login.php">Login User</a>
-                    <a class="dropdown-item" href="/carpool/rentalAgency/login.php">Login Agency</a>
+                    echo '<a class="dropdown-item" href="/user/login.php">Login User</a>
+                    <a class="dropdown-item" href="/rentalAgency/login.php">Login Agency</a>
                     <hr class="m-0">
-                    <a class="dropdown-item" href="/carpool/user/signup.php">Signup User</a>
-                    <a class="dropdown-item" href="/carpool/rentalAgency/signup.php">Signup Agency</a>
+                    <a class="dropdown-item" href="/user/signup.php">Signup User</a>
+                    <a class="dropdown-item" href="/rentalAgency/signup.php">Signup Agency</a>
                     ';
                 }
               ?>

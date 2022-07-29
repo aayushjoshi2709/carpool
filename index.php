@@ -61,7 +61,8 @@
               <div class="card shadow p-1" style="width: 18rem" >
                 <img src="'.$row[4].'" class="card-img-top" alt="..." style="height:200px"/>
                 <div class="card-body">
-                  <h5 class="card-title text-uppercase">'.$row[1].'</h5>
+                  <h5 class="card-title text-uppercase" style="text-overflow: ellipsis; white-space: nowrap;
+                  overflow: hidden;">'.$row[1].'</h5>
                   <p class="card-text">
                     <p class="m-0"><b>Seating Capacity: </b>'.$row[2].'</p>
                     <p> <b>Rent Per Day: </b>'.$row[3].'</p>
