@@ -1,0 +1,18 @@
+.signup{
+  width: 30rem;
+}
+.login{
+  width: 24rem;
+}
+.addupdatevehicle{
+  width: 26rem;
+}
+@media only screen and (max-width: 768px) {
+    .signup, .login, .addupdatevehicle{
+      width: 90%;
+    }
+    .bookedContainer{
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+}

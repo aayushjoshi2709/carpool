@@ -8,9 +8,9 @@
         die(); 
     }
 ?> 
-  <h1 class="display-2 mt-4 text-center">Booked Vehicles</h1>
-  <div class="container bg-white shadow mx-auto mb-5 mt-2">
-  <table class="table w-100 table-striped table-responsive-lg table-responsive-sm">
+  <h1 class="display-2 mt-4  text-center">Booked Vehicles</h1>
+  <div class="container-sm bg-white shadow mx-auto mb-5 mt-2 overflow-auto">
+  <table class="table w-100 table-striped">
       <thead>
         <tr>
           <th scope="col">Sno</th>

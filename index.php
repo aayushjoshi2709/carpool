@@ -50,7 +50,7 @@
         </div>';
         }
       ?>
-      <div class="row my-auto">
+      <div class="row my-auto d-flex justify-content-center">
       <?php
         $dateNow = date("Y-m-d");
         $result = $conn->query("SELECT * from registeredvehicles where vehicleNumber not in (SELECT vehicleNumber from bookedvehicles where endDate >='".$dateNow."');");
@@ -58,8 +58,8 @@
           while($row = $result->fetch_array(MYSQLI_NUM)){
             $str = '
             <div class="col-auto mb-3">
-              <div class="card shadow p-1"  style="width: 18rem">
-                <img src="'.$row[4].'" class="card-img-top" alt="..." />
+              <div class="card shadow p-1" style="width: 18rem" >
+                <img src="'.$row[4].'" class="card-img-top" alt="..." style="height:200px"/>
                 <div class="card-body">
                   <h5 class="card-title text-uppercase">'.$row[1].'</h5>
                   <p class="card-text">

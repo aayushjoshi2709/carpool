@@ -50,7 +50,7 @@
         }
     }
 ?>
-<div class="container border p-3 px-4 my-5 shadow bg-white rounded" style="width: 30rem">
+<div class="container border p-3 px-4 my-5 shadow bg-white rounded addupdatevehicle">
     <form method="post" action="#">
         <h1 class="display-2 text-center m-4">Update Vehicle</h1>
         <?php

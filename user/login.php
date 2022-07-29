@@ -33,7 +33,7 @@
     }
     $conn->close();
 ?>
-<div class="container border p-3 px-4 my-5 shadow bg-white rounded" style="width: 24rem">
+<div class="container border p-3 px-4 my-5 shadow bg-white rounded login">
     <form action="#" method="post" id="form">
         <h1 class="display-2 text-center m-4">Login</h1>
         <h1 class="lead text-center m-4">User</h1>
@@ -56,18 +56,7 @@
             <input type="password" name="pass" id="pass" class="form-control" />
             <label class="form-label" for="pass">Password</label>
         </div>
-        <div class="row mb-4">
-            <div class="col d-flex justify-content-center">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="rememberme" checked />
-                    <label class="form-check-label" for="rememberme"> Remember me </label>
-                </div>
-            </div>
 
-            <div class="col">
-                <a href="#!">Forgot password?</a>
-            </div>
-        </div>
         <div class="text-center">
             <button type="submit" class="btn btn-primary  btn-block mb-4 m-auto">Sign in</button>
         </div>

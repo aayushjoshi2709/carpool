@@ -41,7 +41,7 @@
     }
     $conn->close();
 ?>
-<div class="container border p-3 px-4 my-5 shadow bg-white rounded"  style="width: 30rem">
+<div class="container border p-3 px-4 my-5 shadow bg-white rounded  signup">
     <form action="#" method="post" id="form">
         <h1 class="display-2 text-center m-4">Signup</h1>
         <h1 class="lead text-center m-4">User</h1>
@@ -57,13 +57,13 @@
             }
         ?>
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-2">
                     <input type="text" id="fname" name="fname" class="form-control" />
                     <label class="form-label" for="fname" required>First Name</label>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-2">
                     <input type="text" id="lname" name="lname" class="form-control" />
                     <label class="form-label" for="lname" required>Last Name</label>
@@ -71,13 +71,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-2">
                     <input type="text" id="address" name="address" class="form-control" />
                     <label class="form-label" for="address" required>Address</label>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-2">
                     <input type="number" id="phone" name="phone" class="form-control" />
                     <label class="form-label" for="phone" required>Phone No.</label>
@@ -85,13 +85,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-2">
                     <input type="email" id="email" name="email" class="form-control" />
                     <label class="form-label" for="email" required>Email address</label>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-2">
                     <input type="text" id="username" name="username" class="form-control" />
                     <label class="form-label" for="username" required>Username</label>
@@ -100,13 +100,13 @@
         </div>
         <div class="row">
             <p class="text-danger my-0 py-0" id="notmatch"><p>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-4">
                     <input type="password" id="pass" name="pass" class="form-control" />
                     <label class="form-label" for="pass" required>Password</label>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="form-outline mb-4">
                     <input type="password" id="cpass" class="form-control" />
                     <label class="form-label" for="cpass" required>Confirm Password</label>
